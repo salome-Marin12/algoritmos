@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.semaforo {
+    width: 100px;
+    height: 300px;
+    background-color: black;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+.luz {
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+.verde {
+    background-color: green;
+}
+.amarillo {
+    background-color: yellow;
+}
+.rojo {
+    background-color: red;
+}

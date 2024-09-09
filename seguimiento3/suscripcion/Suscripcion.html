@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción al Gimnasio</title>
+    <link rel="stylesheet" href="suscripcion.css">
+</head>
+<body>
+
+    <h2>Proceso de Suscripción al Gimnasio</h2>
+    <form id="formSuscripcion">
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1" required>
+
+        <label for="plan">Tipo de plan de suscripción:</label>
+        <select id="plan" name="plan" required>
+            <option value="mensual">Mensual</option>
+            <option value="trimestral">Trimestral</option>
+            <option value="anual">Anual</option>
+        </select>
+
+        <label for="cuotas">Número de cuotas (solo para planes trimestrales y anuales):</label>
+        <input type="number" id="cuotas" name="cuotas" min="1" max="12" value="1" required>
+
+        <button type="submit">Calcular Suscripción</button>
+    </form>
+
+    <div class="message" id="mensaje"></div>
+
+    <button id="salir">Salir del Programa</button>
+
+    <script src="suscripcion.js"></script>
+
+</body>
+</html>
